@@ -249,3 +249,26 @@ ol {
 	line-height: 24px;
 	color: var(--sidebar--font-color);
 }
+
+@media (max-width: 768px) {
+	body {
+		padding: 0px;
+	}
+	.wrapper{
+		max-width: fit-content;
+	} 
+	.main-content{
+		max-width: 478px;
+		padding-left: 20px;
+		padding-right: 5px;
+	}
+	.name{
+		font-size: 25px;
+	}
+	.sidebar {
+		max-width: 290px;
+	}
+	.portfolio__img {
+		max-width: 90%;
+	  }
+}
