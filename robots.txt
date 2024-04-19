@@ -1,0 +1,4 @@
+User-agent: *
+Disallow:
+Host:phpmyadmin.iecatalog.org.ua
+Sitemap:https://phpmyadmin.iecatalog.org.ua/sitemap.xml
