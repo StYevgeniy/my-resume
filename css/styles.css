@@ -216,7 +216,7 @@ ol {
 	font-weight: 700;
 	font-size: 14px;
 	line-height: 24px;
-	color: var(--sidebar--font-color);
+	color: #a8a8a8;
 	margin-right: 8px;
 }
 .contacts-link {
