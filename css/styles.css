@@ -55,7 +55,8 @@ ol {
 	font-weight: 400;
 	font-size: 14px;
 	line-height: 24px;
-	color: #595959
+	color: #595959;
+	text-align: justify;
 }
 /* My projects */
 .projects {
