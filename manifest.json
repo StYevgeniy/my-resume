@@ -712,13 +712,6 @@
       "id": "My Resume"
     }
   ],
-  "shortcuts": [
-    {
-      "name": "My portfolio",
-      "url": "https://docs.google.com/document/d/1wY9-Unv-63A044Vg_GfO10VuugZ_Sy_IshdtBFmK1_U/edit",
-      "description": "My portfolio. Front-End Developer + html/css typewriter"
-    }
-  ],
   "screenshots": [
     {
       "src": "./img/st-portfolio.webp",
