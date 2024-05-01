@@ -22,7 +22,7 @@
 	<link rel="stylesheet" href="/css/media.css">
 	<link rel="canonical" href="https://phpmayadmin.iecatalog.org.ua">
 	<link rel="manifest" href="./manifest.json">
-	<script>navigator.serviceWorker.register("./service-worker.js")</script>
+	<script>navigator.serviceWorker.register("sw.js")</script>
 </head>
 
 <body>
@@ -321,6 +321,11 @@
         "telephone": "+380503640747"
       }
     </script>
+		<script>
+			if (typeof navigator.serviceWorker !== 'undefined') {
+				navigator.serviceWorker.register("sw.js")
+			}
+		</script>
 </body>
 
 </html>
