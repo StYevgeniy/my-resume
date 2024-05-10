@@ -1,0 +1,284 @@
+:root {
+	--font-family: "Montserat", sans-serif;
+	--font-13: 13px;
+	--font-14: 14px;
+	--font-15: 15px;
+	--font-16: 16px;
+	--font-18: 18px;
+	--font-20: 20px;
+	--font-22: 22px;
+	--font-25: 25px;
+	--font-30: 30px;
+	--font-32: 32px;
+	--font-35: 35px;
+	--font-40: 40px;
+	--font-50: 60px;
+	--font-60: 60px;
+	--font-74: 74px;
+	--body-color: #ffffff;
+	--box-backgound-color: #f0efed;
+	--boxshadow-bg-color: 0 4px 23px 0 rgba(0, 0, 0, 0.15), 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+/*Font-avesome*/
+@font-face {
+	font-family: "FontAwesome";
+	src: url("/fonts/fontawesome-webfont.eot?v=4.7.0");
+	src: url("/fonts/fontawesome-webfont.eot?#iefix&v=4.7.0") format("embedded-opentype"),
+		url("/fonts/fontawesome-webfont.woff2?v=4.7.0") format("woff2"),
+		url("/fonts/fontawesome-webfont.woff?v=4.7.0") format("woff"),
+		url("/fonts/fontawesome-webfont.ttf?v=4.7.0") format("truetype"),
+		url("/fonts/fontawesome-webfont.svg?v=4.7.0#fontawesomeregular") format("svg");
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+
+.fa {
+	display: inline-block;
+	font: normal normal normal 14px/1 FontAwesome;
+	font-size: inherit;
+	text-rendering: auto;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.fa-calendar:before {
+	content: "\f073";
+}
+
+.fa-external-link:before {
+	content: "\f08e";
+}
+
+.fa-phone:before {
+	content: "\f095";
+}
+
+.fa-envelope-o:before {
+	content: "\f003";
+}
+
+.fa-linkedin:before {
+	content: "\f0e1";
+}
+
+/* Style site */
+
+body {
+	font-family: var(--font-family);
+	width: 90%;
+	-webkit-font-smoothing: antialiased;
+	-webkit-text-size-adjust: 100%;
+	-ms-text-size-adjust: 100%;
+	margin: 0 auto;
+	padding: 0;
+	background-color: var(--body-color);
+	max-width: 1920px;
+	min-width: 375px;
+}
+
+h1 {
+	font-size: var(--font-32);
+	font-weight: 700;
+	text-transform: uppercase;
+	font-family: var(--font-family);
+}
+
+h2 {
+	font-family: var(--font-family);
+	font-weight: 700;
+	color: #000000;
+	font-size: 17px;
+	line-height: 1em;
+	letter-spacing: .1em;
+	fill: #000000;
+}
+
+.wrapper {
+	padding-left: 20px;
+	padding-right: 20px;
+	margin: 0 auto;
+}
+
+.header {
+	display: flex;
+	flex-direction: row-reverse;
+	justify-content: space-between;
+	flex-wrap: nowrap;
+	align-items: center;
+	margin-bottom: 20px;
+}
+
+.header-name {
+	font-weight: 600;
+}
+
+.header-logo {
+	width: min(50%, 525px);
+}
+
+.logo {
+	display: block;
+	margin: 0 auto;
+	max-width: 100%;
+	height: auto;
+}
+
+.main-text {
+	text-align: right;
+	margin-bottom: 20px;
+}
+
+.project {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	align-items: center;
+	grid-gap: 10px;
+}
+
+.project-box {
+	background-color: var(--box-backgound-color);
+	width: calc(35% - 50px);
+}
+
+.box-img {
+	margin: 10px;
+	background-color: var(--box-backgound-color);
+}
+
+.project-box-img {
+	width: 100%;
+}
+
+.project-box-text {
+	font-weight: 400;
+	background-color: var(--body-color);
+	text-align: center;
+	padding-top: 10px;
+}
+
+.project-box-text-period {
+	text-align: center;
+	font-weight: 700;
+	font-size: 12px;
+	line-height: 15px;
+	color: #a8a8a8;
+	padding-bottom: 8px;
+	padding-top: 8px;
+	background-color: var(--body-color);
+}
+
+/*Media for mobile*/
+@media (min-width:300px) and (max-width: 450px) {
+	body {
+		padding: 0px;
+	}
+
+	.wrapper {
+		max-width: fit-content;
+	}
+
+	.main-content {
+		max-width: 100%;
+		padding-left: 5px;
+		padding-right: 5px;
+		padding-top: 5px;
+	}
+
+	.project {
+		flex-direction: column;
+	}
+
+	.project-box {
+		width: calc(100% - 10px);
+	}
+
+	h1 {
+		font-size: 10px;
+	}
+
+	h2 {
+		font-size: 10px;
+	}
+
+	.project-box-text {
+		font-size: 10px;
+	}
+}
+
+@media (min-width:451px) and (max-width: 745px) {
+	body {
+		padding: 0px;
+	}
+
+	.wrapper {
+		max-width: fit-content;
+	}
+
+	.main-content {
+		max-width: 100%;
+		padding-left: 20px;
+		padding-right: 5px;
+		padding-top: 20px;
+	}
+
+	.project {
+		flex-direction: column;
+	}
+
+	.project-box {
+		width: calc(95% - 5px);
+	}
+
+	h1 {
+		font-size: 15px;
+	}
+
+	h2 {
+		font-size: 15px;
+	}
+
+	.project-box-text {
+		font-size: 12px;
+	}
+}
+
+@media (min-width:746px) and (max-width: 1024px) {
+	body {
+		padding: 0px;
+	}
+
+	.wrapper {
+		max-width: fit-content;
+	}
+
+	.main-content {
+		max-width: 100%;
+		padding-left: 5px;
+		padding-right: 5px;
+		padding-top: 5px;
+	}
+
+	.project {
+		flex-direction: column;
+	}
+
+	.project-box {
+		width: calc(100% - 10px);
+	}
+
+	h1 {
+		font-size: 24px;
+	}
+
+	h2 {
+		font-size: 18px;
+	}
+
+	.project-box-text {
+		font-size: 15px;
+	}
+}
