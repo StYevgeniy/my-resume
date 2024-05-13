@@ -49,6 +49,7 @@
 
 .fa-external-link:before {
 	content: "\f08e";
+	padding-left: 5px;
 }
 
 .fa-phone:before {
@@ -95,6 +96,31 @@ h2 {
 	fill: #000000;
 }
 
+a {
+	outline: none;
+	text-decoration: none;
+}
+
+a:link {
+	color: #265301;
+}
+
+a:visited {
+	color: #437a16;
+}
+
+a:focus {
+	color: #100f75;
+}
+
+a:hover {
+	color: #000081;
+}
+
+a:active {
+	color: brown;
+}
+
 .wrapper {
 	padding-left: 20px;
 	padding-right: 20px;
@@ -136,7 +162,7 @@ h2 {
 	justify-content: space-between;
 	flex-wrap: wrap;
 	align-items: center;
-	grid-gap: 10px;
+	grid-gap: 20px;
 }
 
 .project-box {
