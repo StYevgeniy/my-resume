@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/css/contacts.css" />
+    <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon" />
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <div class="form">
+        <form action="#" id="form" class="form-body">
+          <h3 class="form-title">Get in Touch</h3>
+          <div class="form-item">
+            <label for="formFirstName" class="form-lable">First Name*:</label>
+            <input
+              id="formFirstName"
+              type="text"
+              name="firstname"
+              class="form-input _req"
+            />
+          </div>
+          <div class="form-item">
+            <label for="formLastName" class="form-lable">Last Name*:</label>
+            <input
+              id="formLastName"
+              type="text"
+              name="lastname"
+              class="form-input _req"
+            />
+          </div>
+          <div class="form-item">
+            <label for="formEmail" class="form-lable">Email*:</label>
+            <input
+              id="formEmail"
+              type="text"
+              name="email"
+              class="form-input _req _email"
+            />
+          </div>
+          <div class="form-item">
+            <label for="formMassage" class="form-lable">Massage*:</label>
+            <textarea
+              name="massage"
+              id="formMassage"
+              class="form-input"
+            ></textarea>
+          </div>
+          <div class="form-item">
+            <div class="form-lable">Attach a document</div>
+            <div class="file">
+              <div class="file-item">
+                <input
+                  id="formImage"
+                  accept=".jpeg, .jpg, .png, .doc, .docx, .pdf"
+                  type="file"
+                  name="image"
+                  class="file-input"
+                />
+                <div class="file-button">Choose</div>
+              </div>
+              <div id="formPreview" class="file_preview"></div>
+            </div>
+          </div>
+          <div class="form-item">
+            <div class="checkbox">
+              <input
+                id="formAgreement"
+                checked
+                type="checkbox"
+                name="agreement"
+                class="checkbox-input _req"
+              />
+              <label for="formAgreement" class="checkbox-lable"
+                ><span
+                  >I give my consent to the processing of personal data in
+                  accordance with <a href="/">Terms</a></span
+                ></label
+              >
+            </div>
+          </div>
+          <button type="submit" class="form-botton">Submit</button>
+        </form>
+      </div>
+    </div>
+    <script src="./js/script.js"></script>
+  </body>
+</html>
