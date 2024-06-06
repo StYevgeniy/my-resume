@@ -1,70 +1,108 @@
-:root {
-	--font-family: "Montserat", sans-serif;
-	--font-13: 13px;
-	--font-14: 14px;
-	--font-15: 15px;
-	--font-16: 16px;
-	--font-18: 18px;
-	--font-20: 20px;
-	--font-22: 22px;
-	--font-25: 25px;
-	--font-30: 30px;
-	--font-32: 32px;
-	--font-35: 35px;
-	--font-40: 40px;
-	--font-50: 60px;
-	--font-60: 60px;
-	--font-74: 74px;
-	--body-color: #ffffff;
-	--box-backgound-color: #f0efed;
-	--boxshadow-bg-color: 0 4px 23px 0 rgba(0, 0, 0, 0.15), 0 2px 6px rgba(0, 0, 0, 0.15);
+html,
+body,
+div,
+span,
+h1,
+h2,
+h3,
+p,
+a,
+em,
+img,
+small,
+strong,
+b,
+u,
+i,
+center,
+label,
+legend,
+article,
+aside,
+footer,
+header,
+section {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font: 100% inherit;
+	vertical-align: baseline
 }
 
-/*Font-avesome*/
+article,
+aside,
+details,
+figure,
+footer,
+header,
+section {
+	display: block
+}
+
+body {
+	line-height: 1
+}
+
+:root {
+	--font-family: Montserrat, sans-serif;
+	--font-13: .813em;
+	--font-14: .875em;
+	--font-15: .938em;
+	--font-16: 1em;
+	--font-18: 1.125em;
+	--font-20: 1.25em;
+	--font-22: 1.375em;
+	--font-25: 1.563em;
+	--font-30: 1.875em;
+	--font-32: 2em;
+	--font-35: 2.188em;
+	--font-40: 2.5em;
+	--font-50: 3.125em;
+	--font-60: 3.75em;
+	--font-74: 4.625em;
+	--body-color: #fff;
+	--box-backgound-color: #f0efed;
+	--boxshadow-bg-color: 0 .25em 1.438em 0 rgba(0, 0, 0, 0.15), 0 .125em .375em rgba(0, 0, 0, 0.15)
+}
+
 @font-face {
 	font-family: "FontAwesome";
-	src: url("/fonts/fontawesome-webfont.eot?v=4.7.0");
-	src: url("/fonts/fontawesome-webfont.eot?#iefix&v=4.7.0") format("embedded-opentype"),
-		url("/fonts/fontawesome-webfont.woff2?v=4.7.0") format("woff2"),
-		url("/fonts/fontawesome-webfont.woff?v=4.7.0") format("woff"),
-		url("/fonts/fontawesome-webfont.ttf?v=4.7.0") format("truetype"),
-		url("/fonts/fontawesome-webfont.svg?v=4.7.0#fontawesomeregular") format("svg");
-	font-weight: normal;
+	src: url(/fonts/fontawesome-webfont.eot?v=4.7.0);
+	src: url(/fonts/fontawesome-webfont.eot?#iefix&v=4.7.0) format("embedded-opentype"), url(/fonts/fontawesome-webfont.woff2?v=4.7.0) format("woff2"), url(/fonts/fontawesome-webfont.woff?v=4.7.0) format("woff"), url(/fonts/fontawesome-webfont.ttf?v=4.7.0) format("truetype"), url(/fonts/fontawesome-webfont.svg?v=4.7.0#fontawesomeregular) format("svg");
+	font-weight: 400;
 	font-style: normal;
-	font-display: swap;
+	font-display: swap
 }
 
 .fa {
 	display: inline-block;
-	font: normal normal normal 14px/1 FontAwesome;
+	font: 14px/1 FontAwesome;
 	font-size: inherit;
 	text-rendering: auto;
 	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
+	-moz-osx-font-smoothing: grayscale
 }
 
 .fa-calendar:before {
-	content: "\f073";
+	content: "\f073"
 }
 
 .fa-external-link:before {
 	content: "\f08e";
-	padding-left: 5px;
+	padding-left: 5px
 }
 
 .fa-phone:before {
-	content: "\f095";
+	content: "\f095"
 }
 
 .fa-envelope-o:before {
-	content: "\f003";
+	content: "\f003"
 }
 
 .fa-linkedin:before {
-	content: "\f0e1";
+	content: "\f0e1"
 }
-
-/* Style site */
 
 body {
 	font-family: var(--font-family);
@@ -75,56 +113,51 @@ body {
 	margin: 0 auto;
 	padding: 0;
 	background-color: var(--body-color);
-	max-width: 1920px;
-	min-width: 375px;
+	max-width: 120em;
+	min-width: 23.438em
 }
 
 h1 {
-	font-size: var(--font-32);
-	font-weight: 700;
 	text-transform: uppercase;
-	font-family: var(--font-family);
+	font: 700 var(--font-32) var(--font-family)
 }
 
 h2 {
-	font-family: var(--font-family);
-	font-weight: 700;
-	color: #000000;
-	font-size: 17px;
-	line-height: 1em;
+	color: #000;
 	letter-spacing: .1em;
-	fill: #000000;
+	fill: #000;
+	font: 700 17px/1em var(--font-family)
 }
 
 a {
 	outline: none;
-	text-decoration: none;
+	text-decoration: none
 }
 
 a:link {
-	color: #265301;
+	color: #265301
 }
 
 a:visited {
-	color: #437a16;
+	color: #437a16
 }
 
 a:focus {
-	color: #100f75;
+	color: #100f75
 }
 
 a:hover {
-	color: #000081;
+	color: #000081
 }
 
 a:active {
-	color: brown;
+	color: #a52a2a
 }
 
 .wrapper {
 	padding-left: 20px;
 	padding-right: 20px;
-	margin: 0 auto;
+	margin: 0 auto
 }
 
 .header {
@@ -133,27 +166,27 @@ a:active {
 	justify-content: space-between;
 	flex-wrap: nowrap;
 	align-items: center;
-	margin-bottom: 20px;
+	margin-bottom: 20px
 }
 
 .header-name {
-	font-weight: 600;
+	font-weight: 600
 }
 
 .header-logo {
-	width: min(50%, 525px);
+	width: min(50%, 525px)
 }
 
 .logo {
 	display: block;
 	margin: 0 auto;
 	max-width: 100%;
-	height: auto;
+	height: auto
 }
 
-.main-text {
+.project-bloc-contents {
 	text-align: right;
-	margin-bottom: 20px;
+	margin-bottom: 20px
 }
 
 .project {
@@ -162,28 +195,29 @@ a:active {
 	justify-content: space-between;
 	flex-wrap: wrap;
 	align-items: center;
-	grid-gap: 20px;
+	grid-gap: 20px
 }
 
 .project-box {
 	background-color: var(--box-backgound-color);
-	width: calc(35% - 50px);
+	width: calc(35% - 50px)
 }
 
 .box-img {
 	margin: 10px;
-	background-color: var(--box-backgound-color);
+	background-color: var(--box-backgound-color)
 }
 
 .project-box-img {
 	width: 100%;
+	height: auto
 }
 
 .project-box-text {
 	font-weight: 400;
 	background-color: var(--body-color);
 	text-align: center;
-	padding-top: 10px;
+	padding-top: 10px
 }
 
 .project-box-text-period {
@@ -191,120 +225,156 @@ a:active {
 	font-weight: 700;
 	font-size: 12px;
 	line-height: 15px;
-	color: #a8a8a8;
+	color: #595959;
 	padding-bottom: 8px;
 	padding-top: 8px;
-	background-color: var(--body-color);
+	background-color: var(--body-color)
 }
 
-/*Media for mobile*/
+.footer-copyright {
+	text-align: center;
+	font-size: 15px;
+	font-weight: 700;
+	margin-top: 30px;
+	margin-bottom: 30px;
+	display: flex;
+	align-items: stretch;
+	flex-direction: column
+}
+
+.footer-logo {
+	width: 20%
+}
+
+.footer-copyright-text {
+	font-weight: 400
+}
+
 @media (min-width:300px) and (max-width: 450px) {
 	body {
-		padding: 0px;
+		padding: 0
 	}
 
 	.wrapper {
-		max-width: fit-content;
+		max-width: fit-content
 	}
 
 	.main-content {
 		max-width: 100%;
 		padding-left: 5px;
 		padding-right: 5px;
-		padding-top: 5px;
+		padding-top: 5px
 	}
 
 	.project {
-		flex-direction: column;
+		flex-direction: column
 	}
 
 	.project-box {
-		width: calc(100% - 10px);
+		width: calc(100% - 10px)
 	}
 
 	h1 {
-		font-size: 10px;
+		font-size: 10px
 	}
 
 	h2 {
-		font-size: 10px;
+		font-size: 10px
 	}
 
 	.project-box-text {
-		font-size: 10px;
+		font-size: 10px
+	}
+
+	.footer-logo {
+		width: 60%
 	}
 }
 
 @media (min-width:451px) and (max-width: 745px) {
 	body {
-		padding: 0px;
+		padding: 0
 	}
 
 	.wrapper {
-		max-width: fit-content;
+		max-width: fit-content
 	}
 
 	.main-content {
 		max-width: 100%;
 		padding-left: 20px;
 		padding-right: 5px;
-		padding-top: 20px;
+		padding-top: 20px
 	}
 
 	.project {
-		flex-direction: column;
+		flex-direction: column
 	}
 
 	.project-box {
-		width: calc(95% - 5px);
+		width: calc(95% - 5px)
 	}
 
 	h1 {
-		font-size: 15px;
+		font-size: 15px
 	}
 
 	h2 {
-		font-size: 15px;
+		font-size: 15px
 	}
 
 	.project-box-text {
-		font-size: 12px;
+		font-size: 12px
+	}
+
+	.footer-logo {
+		width: 50%
 	}
 }
 
 @media (min-width:746px) and (max-width: 1024px) {
 	body {
-		padding: 0px;
+		padding: 0
 	}
 
 	.wrapper {
-		max-width: fit-content;
+		max-width: fit-content
 	}
 
 	.main-content {
 		max-width: 100%;
 		padding-left: 5px;
 		padding-right: 5px;
-		padding-top: 5px;
+		padding-top: 5px
 	}
 
 	.project {
-		flex-direction: column;
+		flex-direction: column
 	}
 
 	.project-box {
-		width: calc(100% - 10px);
+		width: calc(100% - 10px)
 	}
 
 	h1 {
-		font-size: 24px;
+		font-size: 24px
 	}
 
 	h2 {
-		font-size: 18px;
+		font-size: 18px
 	}
 
 	.project-box-text {
-		font-size: 15px;
+		font-size: 15px
+	}
+
+	.footer-logo {
+		width: 40%
+	}
+}
+
+@media (min-width:1024px) and (max-width: 1960px) {
+	.project-box-text {
+		font-size: 12px
 	}
 }

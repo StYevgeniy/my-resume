@@ -1,313 +1,520 @@
-:root {
-  --font-family: "Montserrat", sans-serif;
-  --body-background-color: #f6f6fa;
-  --wrapper-background-color: #ffffff;
-  --title-font-color: #000000;
-  --sidebar-background-color: #e0ebfe;
-  --sidebar--font-color: #161d2a;
+html,
+body,
+div,
+span,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+em,
+img,
+b,
+u,
+i,
+center,
+ol,
+ul,
+li,
+label,
+legend,
+caption,
+article,
+aside,
+footer,
+header,
+section {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: 100% inherit;
+  vertical-align: baseline
 }
+
+article,
+aside,
+details,
+figure,
+footer,
+header,
+section {
+  display: block
+}
+
+body {
+  line-height: 1
+}
+
+button {
+  border: none;
+  outline: none
+}
+
+@font-face {
+  font-family: "FontAwesome";
+  src: url(/fonts/fontawesome-webfont.eot?v=4.7.0);
+  src: url(/fonts/fontawesome-webfont.eot?#iefix&v=4.7.0) format("embedded-opentype"), url(/fonts/fontawesome-webfont.woff2?v=4.7.0) format("woff2"), url(/fonts/fontawesome-webfont.woff?v=4.7.0) format("woff"), url(/fonts/fontawesome-webfont.ttf?v=4.7.0) format("truetype"), url(/fonts/fontawesome-webfont.svg?v=4.7.0#fontawesomeregular) format("svg");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap
+}
+
+.fa {
+  display: inline-block;
+  font: 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale
+}
+
+.fa-calendar:before {
+  content: "\f073"
+}
+
+.fa-external-link:before {
+  content: "\f08e"
+}
+
+.fa-phone:before {
+  content: "\f095"
+}
+
+.fa-envelope-o:before {
+  content: "\f003"
+}
+
+.fa-linkedin:before {
+  content: "\f0e1"
+}
+
+:root {
+  --font-family: Montserrat, sans-serif;
+  --body-background-color: #f6f6fa;
+  --wrapper-background-color: #fff;
+  --title-font-color: #424242;
+  --sidebar-background-color: #e0ebfe;
+  --sidebar--font-color: #161d2a
+}
+
 body {
   background-color: var(--body-background-color);
-  padding: 40px 40px;
+  padding: 40px;
   font-family: var(--font-family);
+  text-decoration: none;
+  font-style: normal
 }
+
 ul,
 ol {
-  margin-top: 0px;
-  margin-bottom: 0px;
+  margin-top: 0;
+  margin-bottom: 0
 }
+
 .wrapper {
   background-color: var(--wrapper-background-color);
   display: flex;
   flex-direction: row-reverse;
-  width: 1200px;
-  margin: 0 auto;
+  width: 1600px;
+  margin: 0 auto
 }
-/* Main content */
+
 .main-content {
-  padding-top: 88px;
-  padding-left: 80px;
-  padding-right: 40px;
-  padding-bottom: 80px;
   box-sizing: border-box;
+  padding: 40px
 }
-/* My Info */
+
 .main-content-info {
-  margin-bottom: 40px;
+  margin-bottom: 40px
 }
+
 .profession {
   font-weight: 700;
-  font-size: 14px;
+  font-size: 18px;
   line-height: 17px;
   color: var(--title-font-color);
   margin-top: 20px;
-  margin-bottom: 8px;
+  margin-bottom: 8px
 }
+
 .name {
   font-weight: 700;
   font-size: 45px;
   line-height: 55px;
   color: var(--title-font-color);
-  margin-top: 0px;
-  margin-bottom: 12px;
+  margin-top: 0;
+  margin-bottom: 12px
 }
+
 .description {
   font-weight: 400;
   font-size: 14px;
   line-height: 24px;
   color: #595959;
-  text-align: justify;
+  text-align: justify
 }
-/* My projects */
+
 .projects {
-  margin-bottom: 40px;
+  margin-bottom: 40px
 }
+
 .projects-title {
   font-weight: 700;
   font-size: 22px;
   line-height: 27px;
   color: var(--title-font-color);
-  margin-top: 0px;
-  margin-bottom: 8px;
+  margin-top: 0;
+  margin-bottom: 8px
 }
+
+.line {
+  border: var(--title-font-color) 1px solid
+}
+
 .projects-list {
-  margin-left: 16px;
+  margin-left: 16px
 }
+
 .projects-list-item {
   font-weight: 700;
   font-size: 14px;
   line-height: 24px;
-  color: var(--title-font-color);
 }
+
 .projects-link {
   font-weight: 400;
   font-size: 14px;
   line-height: 24px;
-  text-decoration: underline;
+  text-decoration: none;
   text-decoration-skip-ink: none;
-  color: #005fff;
+  color: #0A49D7
 }
+
 .projects-list-tech {
   font-weight: 400;
   font-size: 14px;
   line-height: 24px;
-  color: #595959;
+  color: #595959
 }
-/* Work Experience */
+
 .work-experience {
-  margin-bottom: 40px;
+  margin-bottom: 40px
 }
+
 .work-experience-title {
   font-weight: 700;
   font-size: 22px;
   line-height: 27px;
-  color: var(--title-font-color);
+  color: var(--title-font-color)
 }
+
 .work-experience-company-1 {
-  margin-top: 8px;
+  margin-top: 8px
 }
+
 .work-experience-company-title {
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
   color: var(--title-font-color);
-  margin-bottom: 12px;
+  margin-bottom: 12px
 }
+
 .work-experionce-company-positions {
-  color: #6d9bf5;
+  color: #0A49D7
 }
+
 .work-experience-period {
   font-weight: 400;
   font-size: 12px;
   line-height: 15px;
-  color: #a8a8a8;
-  margin-bottom: 8px;
+  color: #595959;
+  margin-bottom: 8px
 }
+
 .work-experience-period-separstor {
-  color: var(--title-font-color);
+  color: var(--title-font-color)
 }
+
 .work-experience-list {
-  margin-left: 20px;
+  margin-left: 20px
 }
+
 .work-experience-list-item {
   font-weight: 400;
   font-size: 14px;
   line-height: 24px;
-  color: #595959;
+  color: #595959
 }
+
 .work-experience-company {
-  margin-top: 12px;
+  margin-top: 12px
 }
-/* Education */
+
 .education {
-  margin-bottom: 40px;
+  margin-bottom: 40px
 }
+
 .education-title {
   font-weight: 700;
   font-size: 22px;
   line-height: 27px;
-  color: var(--title-font-color);
+  color: var(--title-font-color)
 }
+
 .education-company {
-  margin-top: 8px;
+  margin-top: 8px
 }
+
 .education-company-title {
   font-weight: 700;
   font-size: 16px;
-  color: #6d9bf5;
-  margin-bottom: 8px;
+  color: #0A49D7;
+  margin-bottom: 8px
 }
+
 .education-company-name {
   font-weight: 700;
   font-size: 14px;
   color: var(--title-font-color);
-  margin-bottom: 8px;
+  margin-bottom: 8px
 }
+
 .education-period {
   font-weight: 400;
   font-size: 12px;
-  color: #a8a8a8;
-  margin-bottom: 8px;
+  color: #595959;
+  margin-bottom: 8px
 }
+
 .education-period-separator {
-  color: var(--title-font-color);
+  color: var(--title-font-color)
 }
-/* My portfolio */
+
 .my-portfolio {
-  margin-top: 0px;
+  margin-top: 0
 }
+
 .my-portfolio-title {
   font-weight: 700;
   font-size: 22px;
   color: var(--title-font-color);
   margin-top: 8px;
-  margin-bottom: 8px;
+  margin-bottom: 8px
 }
-/* Sidebar */
+
+.my-portfolio-title,
+a {
+  text-decoration: none
+}
+
 .sidebar {
   background-color: var(--sidebar-background-color);
   padding-top: 40px;
   padding-bottom: 40px;
   box-sizing: border-box;
-  width: 370px;
+  width: 370px
 }
+
 .sidebar-content {
   padding-left: 40px;
   padding-top: 40px;
   padding-right: 40px;
-  box-sizing: border-box;
+  box-sizing: border-box
 }
-/* Contacts */
+
 .contacts-conteiner {
-  margin-bottom: 40px;
+  margin-bottom: 40px
 }
+
 .sidebar-title {
   font-weight: 700;
   font-size: 22px;
   color: var(--sidebar--font-color);
   line-height: normal;
-  margin-top: 0px;
-  margin-bottom: 8px;
+  margin-top: 0;
+  margin-bottom: 8px
 }
+
 .contacts-item {
-  margin-top: 0px;
-  margin-bottom: 4px;
+  margin-top: 0;
+  margin-bottom: 4px
 }
+
 .contacts-type {
   font-weight: 700;
   font-size: 14px;
   line-height: 24px;
   color: #a8a8a8;
-  margin-right: 8px;
+  margin-right: 8px
 }
+
 .contacts-link {
   font-weight: 400;
   font-size: 14px;
   line-height: 24px;
-  text-decoration: underline;
-  color: #2979ff;
+  text-decoration: none;
+  color: #0A49D7
 }
-/* Skills */
+
 .skills-conteiner {
-  margin-bottom: 40px;
+  margin-bottom: 40px
 }
+
 .skills-list {
-  padding-left: 16px;
+  padding-left: 16px
 }
+
 .skills-list-item {
   font-weight: 400;
   font-size: 14px;
   line-height: 24px;
-  color: var(--sidebar--font-color);
+  color: var(--sidebar--font-color)
 }
-/* Soft skills */
+
 .soft-skills-list {
-  padding-left: 16px;
+  padding-left: 16px
 }
+
 .soft-skills-list-item {
   font-weight: 400;
   font-size: 14px;
   line-height: 24px;
-  color: var(--sidebar--font-color);
+  color: var(--sidebar--font-color)
 }
-/*Media for mobile*/
-@media (max-width: 768px) {
+
+@media (min-width: 320px) and (max-width: 480px) {
   body {
-    padding: 0px;
+    padding: 0
   }
+
   .wrapper {
-    max-width: fit-content;
+    max-width: fit-content
   }
+
   .main-content {
-    max-width: 478px;
+    max-width: 288px;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 5px
+  }
+
+  .main-content-info {
+    margin-bottom: 10px
+  }
+
+  .name {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 25px
+  }
+
+  .projects {
+    margin-bottom: 10px
+  }
+
+  .work-experience {
+    margin-bottom: 10px
+  }
+
+  .education {
+    margin-bottom: 10px
+  }
+
+  .sidebar {
+    max-width: 220px;
+    margin-left: 0;
+    padding-left: 0
+  }
+
+  .sidebar-content {
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px
+  }
+
+  .contacts-conteiner {
+    margin-bottom: 10px
+  }
+
+  .skills-conteiner {
+    margin-bottom: 10px
+  }
+
+  .contacts-link {
+    font-size: 12px
+  }
+
+  .portfolio__img {
+    max-width: 100%
+  }
+}
+
+@media (min-width:481px) and (max-width: 768px) {
+  body {
+    padding: 0
+  }
+
+  .wrapper {
+    max-width: fit-content
+  }
+
+  .main-content {
+    max-width: 100%;
     padding-left: 20px;
     padding-right: 5px;
+    padding-top: 20px
   }
+
   .name {
-    font-size: 25px;
+    font-size: 25px
   }
+
   .sidebar {
-    max-width: 290px;
+    max-width: 100%
   }
+
+  .sidebar-content {
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 15px
+  }
+
   .portfolio__img {
-    max-width: 90%;
+    max-width: 100%
   }
 }
-/*Font-aweson style*/
-@font-face {
-  font-family: "FontAwesome";
-  src: url("/fonts/fontawesome-webfont.eot?v=4.7.0");
-  src: url("/fonts/fontawesome-webfont.eot?#iefix&v=4.7.0")
-      format("embedded-opentype"),
-    url("/fonts/fontawesome-webfont.woff2?v=4.7.0") format("woff2"),
-    url("/fonts/fontawesome-webfont.woff?v=4.7.0") format("woff"),
-    url("/fonts/fontawesome-webfont.ttf?v=4.7.0") format("truetype"),
-    url("/fonts/fontawesome-webfont.svg?v=4.7.0#fontawesomeregular")
-      format("svg");
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
-.fa {
-  display: inline-block;
-  font: normal normal normal 14px/1 FontAwesome;
-  font-size: inherit;
-  text-rendering: auto;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-.fa-calendar:before {
-  content: "\f073";
-}
-.fa-external-link:before {
-  content: "\f08e";
-}
-.fa-phone:before {
-  content: "\f095";
-}
-.fa-envelope-o:before {
-  content: "\f003";
-}
-.fa-linkedin:before {
-  content: "\f0e1";
+
+@media (min-width:768px) and (max-width: 1920px) {
+  body {
+    padding: 0
+  }
+
+  .wrapper {
+    max-width: fit-content
+  }
+
+  .main-content {
+    max-width: 100%;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 40px
+  }
+
+  .name {
+    font-size: 25px
+  }
+
+  .sidebar {
+    max-width: 100%
+  }
+
+  .sidebar-content {
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 15px
+  }
 }
