@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Front-End Developer + html/css typewriter and QA My resume">
+    <meta name="keywords" content="HTML, HTML5. CSS, CSS3, JavaScript, front-end, developer, seo,testing, development, experience, php, education center">
+    <meta name="author" content="Yevgeniy Storozhenko">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="/mail/css/contacts.css" />
+    <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="/favicon.ico">
+    <title>Get in Touch</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="form">
+                <form action="mail.php" method="POST">
+                    <legend>
+                        <h3 class="form-title">Get in Touch</h3>
+                        <p class="legends">If you have a project in mind, shoot me a message and I will get back to you shortly.<br> I look forward to working with you!</p>
+                    </legend>
+                    <div class="form_item">
+                        <label for="user_firstnam" class="form_lable">First Name*:</label>
+                        <input type="text" id="user_firstnam" name="user_firstname" placeholder="First Name" required
+                            minlength="4" maxlength="24" class="form_input" />
+                    </div>
+                    <div class="form_item">
+                        <label for="user_lastname" class="form_lable">Last Name*:</label>
+                        <input type="text" id="user_lastname" name="user_lastname" placeholder="Last Name" required
+                            minlength="4" maxlength="24" class="form_input" />
+                    </div>
+                    <div class="form_item">
+                        <label for="user_email" class="form_lable">Email*:</label>
+                        <input type="email" id="user_email" name="user_email" required placeholder="Email"
+                            class="form_input" />
+                    </div>
+                    <div class="form_item">
+                        <label for="user_phone" class="form_lable">Phone:</label>
+                        <input type="tel" id="user_phone" name="user_phone" placeholder="Format: 123-456-78-90"
+                            pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" class="form_input" />
+                    </div>
+                    <div class="form_item">
+                        <label for="user_message" class="form_lable">Message:</label>
+                        <textarea name="user_message" id="user_message" class="form_input"></textarea>
+                    </div>
+
+                    <div class="form_item">
+                        <div class="checkbox">
+                            <input type="checkbox" id="agreement" name="agreement" checked required class="checkbox_input">
+                            <label for="agreement" class="checkbox_lable">
+                                <span>I give my consent to the processing of personal data in accordance with <a
+                                        href="/">Terms</a></span>
+                            </label>
+                        </div>
+                    </div>
+                    <button type="submit" class="form-botton">Submit</button>
+                </form>
+            </div> <!-- .form-->
+
+        </div> <!-- .row -->
+
+    </div><!-- /.container -->
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+</body>
+
+</html>

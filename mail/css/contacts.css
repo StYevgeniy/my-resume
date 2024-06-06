@@ -1,0 +1,248 @@
+/* Reset style */
+::before,
+::after {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+}
+ul,
+ol,
+li {
+    list-style: none;
+}
+img {
+    vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: inherit;
+    font-size: inherit;
+}
+
+.montserrat-<uniquifier> {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+
+html,
+body {
+    font-family: "Montserrat", sans-serif;
+    height: 100%;
+    line-height: 1;
+    font-size: 14px;
+    background-color: #ffffff;
+}
+
+.legends {
+    color: #000000;
+    font-weight: 400;
+    font-size: 0.9em;
+    line-height: 2em;
+    letter-spacing: 0em;
+    margin-left: 0.563em;
+}
+
+/* Section form */
+.form {
+    max-width: 550px;
+    margin: 0 auto;
+    color: #000000;
+    padding: 30px 0;
+}
+
+.form * {
+    outline: none;
+}
+
+.form_body {
+    position: relative;
+}
+
+.form_body::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(51, 51, 51, 0.9) url(/img/loading.gif) center / 100px no-repeat;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.5s ease 0s;
+}
+
+.form_body._sending::after {
+    opacity: 1;
+    visibility: visible;
+}
+.form-title {
+    font-size: 40px;
+    font-weight: 700;
+    margin: 0 0 30px 0;
+}
+
+.form_item {
+    margin: 0 0 20px 9px;
+}
+
+.form_lable {
+    font-size: 18px;
+    display: block;
+    margin: 0 0 10px 0;
+}
+input {
+    max-width: 96%;
+}
+.form_input {
+    height: 50px;
+    padding: 0 10px;
+    border-radius: 5px;
+    width: 100%;
+    font-size: 18px;
+}
+
+.form_input:focus {
+    box-shadow: 0 0 15px #7a956b;
+}
+.form_input._error {
+    box-shadow: 0 0 15px red;
+}
+textarea {
+    max-width: 93%;
+}
+textarea.form_input {
+    min-height: 120px;
+    resize: vertical;
+    padding: 20px;
+}
+
+.file {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.file-item {
+    position: relative;
+}
+
+.file-input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    font-size: 0;
+    cursor: pointer;
+}
+.file-button {
+    display: inline-flex;
+    min-height: 40px;
+    border-radius: 30px;
+    justify-content: center;
+    align-items: center;
+    background-color: #5b8f5f;
+    padding: 0 20px;
+}
+
+.file_preview {
+    display: inline-block;
+    max-width: 100px;
+    padding: 10px 0 0 0;
+}
+.file_preview img {
+    max-width: 100%;
+}
+
+.checkbox {
+font-family: Arial, Helvetica, sans-serif;
+}
+
+.checkbox._error .checkbox_lable::before {
+    box-shadow: 0 0 15px red;
+}
+
+.checkbox_input {
+    display: none;
+}
+
+.checkbox_input:checked + .checkbox_lable::after {
+transform: scale(1);
+}
+
+.checkbox_lable {
+    font-size: 16px;
+    line-height: 140%;
+    display: inline-flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.checkbox_lable::before {
+    content: "";
+    /* align-self: flex-start; */
+    flex: 0 0 24px;
+    height: 24px;
+    background-color: #e0e0e0;
+    border-radius: 4px;
+    margin: 0 10px 0 0;
+}
+.checkbox_lable::after {
+    transition: transform 0.5s ease 0s;
+    content: "";
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    background-color: #7a956b;
+    margin-left: 4px;
+    border-radius: 4px;
+    transform: scale(0);
+}
+.checkbox_lable a {
+    color: #7a956b;
+    font-weight: 700;
+}
+
+.form-botton {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 60px;
+    background-color: #7a956b;
+    font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 700;
+    cursor: pointer;
+    border-radius: 20px;
+    border: 0;
+}
+.form-botton:focus {
+    box-shadow: 0 0 15px #7a956b;
+}
+/* Footer */
+
+.footer-copyright {
+	text-align: center;
+	font-size: 15px;
+	font-weight: 700;
+	margin-top: 30px;
+	margin-bottom: 30px;
+	display: flex;
+    align-items: stretch;
+    flex-direction: column;
+}
+.footer-logo img {
+    width: 20%;
+}
